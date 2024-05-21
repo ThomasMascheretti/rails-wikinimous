@@ -1,0 +1,10 @@
+<div class=container m-5>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article.id) %></li>
+    <li><%= article.content%></li>
+  <% end %>
+</ul>
+
+</div>
